@@ -7,6 +7,12 @@ class Oknoll < Formula
   sha256 "f27badcfa694732d4c6fc897e58b775899845b5a8101097daa763d2b876999a4"
   license "Apache-2.0"
 
+  bottle do
+    root_url "https://github.com/openknoll/homebrew-tap/releases/download/oknoll-0.3.0"
+    sha256 cellar: :any, arm64_tahoe:  "61805876f80f42bc71da97764b9b4fd70c26af09864f0b00e1589fd87db031b0"
+    sha256 cellar: :any, x86_64_linux: "4780dcf2fc789312c1aafd13d357124fe024f98060af95c39794b6b850ad9ba2"
+  end
+
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
   depends_on "libxml2"
