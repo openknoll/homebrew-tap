@@ -3,15 +3,9 @@ class Oknoll < Formula
 
   desc "Local-first CLI for building, linting, exploring, and packing OKF bundles"
   homepage "https://github.com/openknoll/oknoll-python"
-  url "https://files.pythonhosted.org/packages/4b/c5/fe42e8a8c6d64d5586ab82b935ef897c6dbf3ddb867561049e3f001426e8/oknoll-0.3.1.tar.gz"
-  sha256 "6bcae4ae5af716be050e57d8ce5b65b7f1f5764ada28dfdc29e50d0a2d4b3d4b"
+  url "https://files.pythonhosted.org/packages/18/27/64635829e6c5daa29a876a30b3fb7e88ef6ccc9af616c8b5c80c89ea1132/oknoll-0.3.2.tar.gz"
+  sha256 "0e66cf3182ed601777716f579e30db4146d364b0216a439ec41ed0cb2549f7d6"
   license "Apache-2.0"
-
-  bottle do
-    root_url "https://github.com/openknoll/homebrew-tap/releases/download/oknoll-0.3.1"
-    sha256 cellar: :any, arm64_tahoe:  "ed4aa2ac87d32472c77513a484ae1f96e65e0a43eeb70da7a9558dc11e268c7a"
-    sha256 cellar: :any, x86_64_linux: "d2c3837c93d00c707cf4880f8ec8975225b1e738415a8a813c4daafdac9ba35a"
-  end
 
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
@@ -153,23 +147,23 @@ class Oknoll < Formula
   end
 
   resource "okf-core" do
-    url "https://files.pythonhosted.org/packages/7f/84/6ff6865ca1b37fddbdf3b9b81b62130de978f7e30cdc629c47560878af6b/okf_core-0.3.1.tar.gz"
-    sha256 "91fc903eb5698f3215043cf57cbe6d1a315627d714795d0ebc8f87c82cc809c3"
+    url "https://files.pythonhosted.org/packages/0f/56/fff4bc4ec46791e75f97ac30800df3ff7ea3ee5254c38fa0dc7e0ad7a8ec/okf_core-0.3.2.tar.gz"
+    sha256 "40d991de8488dc5fc309343b485f0532cab853ab2e5a1d1479ce8ec20a683c58"
   end
 
   resource "oknoll-connectors" do
-    url "https://files.pythonhosted.org/packages/ae/85/446a8caaa15aae9a0b1f53986aa95e57a97ca6c1e6618665f38783183644/oknoll_connectors-0.3.1.tar.gz"
-    sha256 "4ca7e9aee0261a0b1222e27ee24ca9ebea6ddb2ec4b6434a46fde8b01a5fbf77"
+    url "https://files.pythonhosted.org/packages/85/07/4685f929df55d20028a983c0771724ed06b135bcae485e85cf43a5b3a263/oknoll_connectors-0.3.2.tar.gz"
+    sha256 "00e8b377190ba3d03c96eda2d3e948fb3dec656d387a0343858d0edd79e51aff"
   end
 
   resource "oknoll-eval" do
-    url "https://files.pythonhosted.org/packages/e8/d4/f69abc9091fe160f9823cde3ce603ba74286daf5e3267dddc0ce062a8c29/oknoll_eval-0.3.1.tar.gz"
-    sha256 "6a13d2a38b08f00db48bf09a4bbae06cde6437aca7733b5221320f0b83b81354"
+    url "https://files.pythonhosted.org/packages/a2/18/5b52f1b05c050477a9fc6668fcb8f4dc1d0ebd29fc3d64c6c162f1bbc5c1/oknoll_eval-0.3.2.tar.gz"
+    sha256 "2ecf9fb150620d2a94ba5e90db724dcb914262d41a7bd8020522ca913aa59996"
   end
 
   resource "oknoll-providers" do
-    url "https://files.pythonhosted.org/packages/ca/72/64fff4074888c24d94b946a2b12c773c59e7c6cf405b707be5ce6d7f1b76/oknoll_providers-0.3.1.tar.gz"
-    sha256 "9d130b6d82b6bd6ffd18c130ebaa475c9cc15eed287fd92d5ee3d4772fa22024"
+    url "https://files.pythonhosted.org/packages/3a/15/cf6cebaa133445a8b976a4a9dd45332f7ec938f5e17965fdec776f651ba5/oknoll_providers-0.3.2.tar.gz"
+    sha256 "968b48428e9dcab89ba6ee34cfa26376d43d22e71dafebdb885e27e7ea3553e4"
   end
 
   resource "opentelemetry-api" do
@@ -288,13 +282,13 @@ class Oknoll < Formula
   end
 
   resource "typing-inspection" do
-    url "https://files.pythonhosted.org/packages/6d/bc/4eae18cd40c65798a16267572ba346c11f599d44b01603dbd843342042bc/typing_inspection-0.4.3.tar.gz"
-    sha256 "c5f9ec1530b5c1e2c9bc34a84d9a3466ed1b2f3f2fa9f901368d9c5596210e4d"
+    url "https://files.pythonhosted.org/packages/a3/26/b09b8010994eccc3c09092e6b34058f36a460eea2d4c3e8b910c695975a0/typing_inspection-0.4.4.tar.gz"
+    sha256 "547274fa6b0a561ccf549cc9524b999a578e737d015d8709d021f9d0d13bea47"
   end
 
   resource "uvicorn" do
-    url "https://files.pythonhosted.org/packages/03/18/ccce41535dee1be77735592bd19965f3972c82e07ee703d324709496b716/uvicorn-0.52.1.tar.gz"
-    sha256 "112ec661814189acbccd3f7b86460147cc065fc92c0821afa78918780e4354dd"
+    url "https://files.pythonhosted.org/packages/c3/53/be79eff13cc289570b4c6875fa4641a91a1dc51ece7f6213f364b0a58c4c/uvicorn-0.52.2.tar.gz"
+    sha256 "4294500b9c8f7a3ef3e975d9e4be08c3eb76441af449a9e6e10146c6a182ffec"
   end
 
   def install
