@@ -3,15 +3,9 @@ class Oknoll < Formula
 
   desc "Local-first CLI for building, linting, exploring, and packing OKF bundles"
   homepage "https://github.com/openknoll/oknoll-python"
-  url "https://files.pythonhosted.org/packages/18/27/64635829e6c5daa29a876a30b3fb7e88ef6ccc9af616c8b5c80c89ea1132/oknoll-0.3.2.tar.gz"
-  sha256 "0e66cf3182ed601777716f579e30db4146d364b0216a439ec41ed0cb2549f7d6"
+  url "https://files.pythonhosted.org/packages/30/8f/648d2af68ede0071a4f6edb071596ca6df51a2c2ca22208defbc6d32f8cf/oknoll-0.3.3.tar.gz"
+  sha256 "12fa441fbf4cd1fe76075ce93edfab22c34159a47a8ef76f9ee408807e4feeb0"
   license "Apache-2.0"
-
-  bottle do
-    root_url "https://github.com/openknoll/homebrew-tap/releases/download/oknoll-0.3.2"
-    sha256 cellar: :any, arm64_tahoe:  "090d4b4118f535568da21b8870b6a7f89bba3627905fa8fe865093d5f9df101b"
-    sha256 cellar: :any, x86_64_linux: "25fd9d94645322af3a0bece4c9074c32e8ec869c47df7336de316f9c5d84b755"
-  end
 
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
@@ -33,8 +27,8 @@ class Oknoll < Formula
   end
 
   resource "anthropic" do
-    url "https://files.pythonhosted.org/packages/0f/ca/3cb2c20ee729736fbd4546d5d8b67e818288529fe70cb7a80dbf80aef70b/anthropic-0.121.0.tar.gz"
-    sha256 "e79d6e08ab3376602fc9a70d4d5ea3540817c76cf7e16658bed790834e1833d6"
+    url "https://files.pythonhosted.org/packages/fa/23/9987d70b74e3481d5bc5d2021d3e10fd5f60c1f7b54088ea86506d9b7f2b/anthropic-0.122.0.tar.gz"
+    sha256 "ffec56ae96657c8d19fa575ec96f140f380c353a07ab7d61b92eb18ee6536601"
   end
 
   resource "anyio" do
@@ -153,23 +147,23 @@ class Oknoll < Formula
   end
 
   resource "okf-core" do
-    url "https://files.pythonhosted.org/packages/0f/56/fff4bc4ec46791e75f97ac30800df3ff7ea3ee5254c38fa0dc7e0ad7a8ec/okf_core-0.3.2.tar.gz"
-    sha256 "40d991de8488dc5fc309343b485f0532cab853ab2e5a1d1479ce8ec20a683c58"
+    url "https://files.pythonhosted.org/packages/4c/04/15b66d2dc9bffd76a441f9951d48389c43a75baefc87af77cc3b4fd92bb1/okf_core-0.3.3.tar.gz"
+    sha256 "83ed4695918fc21f428c61bd686c644dce07fc7e60f517ed3bebaff4badf918f"
   end
 
   resource "oknoll-connectors" do
-    url "https://files.pythonhosted.org/packages/85/07/4685f929df55d20028a983c0771724ed06b135bcae485e85cf43a5b3a263/oknoll_connectors-0.3.2.tar.gz"
-    sha256 "00e8b377190ba3d03c96eda2d3e948fb3dec656d387a0343858d0edd79e51aff"
+    url "https://files.pythonhosted.org/packages/77/b9/cb67c8fc42b13dc50dc67ae4dd92f7bc05f768fa382b67493db606691bef/oknoll_connectors-0.3.3.tar.gz"
+    sha256 "79b8c588386a7561627d637ebf2217cf38055b5ccf82a1bf2abb5968e3b48f24"
   end
 
   resource "oknoll-eval" do
-    url "https://files.pythonhosted.org/packages/a2/18/5b52f1b05c050477a9fc6668fcb8f4dc1d0ebd29fc3d64c6c162f1bbc5c1/oknoll_eval-0.3.2.tar.gz"
-    sha256 "2ecf9fb150620d2a94ba5e90db724dcb914262d41a7bd8020522ca913aa59996"
+    url "https://files.pythonhosted.org/packages/43/e7/f14e5540013f851e8ffc1db9db82f2949b8eecd0bbb5a92ff9f4e5b973cd/oknoll_eval-0.3.3.tar.gz"
+    sha256 "b90e5e0413983a25b941fddb38de953eeb60102c9ebc577aeda88bbe57587820"
   end
 
   resource "oknoll-providers" do
-    url "https://files.pythonhosted.org/packages/3a/15/cf6cebaa133445a8b976a4a9dd45332f7ec938f5e17965fdec776f651ba5/oknoll_providers-0.3.2.tar.gz"
-    sha256 "968b48428e9dcab89ba6ee34cfa26376d43d22e71dafebdb885e27e7ea3553e4"
+    url "https://files.pythonhosted.org/packages/7a/c6/2fcc4148c0dff996364876a0e5ed370f0c50618bce7c1e59fee4d358a054/oknoll_providers-0.3.3.tar.gz"
+    sha256 "f9ddf6bc4cf417ce1ec36756bd05bb2d73e683dd90e9221ec0876d56e889c911"
   end
 
   resource "opentelemetry-api" do
@@ -213,8 +207,8 @@ class Oknoll < Formula
   end
 
   resource "pypdf" do
-    url "https://files.pythonhosted.org/packages/17/17/ee75a92718ec7212de831e71454d702225aa5e474a805cce169806044453/pypdf-6.15.0.tar.gz"
-    sha256 "d39c4d955a76409284a905e2d65b40076d77ab76129e0faaeeb6612403ecfc79"
+    url "https://files.pythonhosted.org/packages/1a/7f/5bc369dedae6750e23fc9ce82f6396258f92ed80ae0137732738a6d4ffce/pypdf-6.16.0.tar.gz"
+    sha256 "dfc5b0afeb5e02e9ee1dce71c09071f062d1a4030d2925f03a5daee0ee975ed8"
   end
 
   resource "pytest" do
@@ -293,8 +287,8 @@ class Oknoll < Formula
   end
 
   resource "uvicorn" do
-    url "https://files.pythonhosted.org/packages/c3/53/be79eff13cc289570b4c6875fa4641a91a1dc51ece7f6213f364b0a58c4c/uvicorn-0.52.2.tar.gz"
-    sha256 "4294500b9c8f7a3ef3e975d9e4be08c3eb76441af449a9e6e10146c6a182ffec"
+    url "https://files.pythonhosted.org/packages/2e/28/64ca011edf31c715b4fad359c587ea52391aaffa125065695590241ff617/uvicorn-0.52.3.tar.gz"
+    sha256 "18857b9e6579300be55c91c0a1cfd37d9a2cf0cabea33b88275f199eb73b8b58"
   end
 
   def install
