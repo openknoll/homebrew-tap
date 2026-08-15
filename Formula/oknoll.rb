@@ -3,15 +3,9 @@ class Oknoll < Formula
 
   desc "Local-first CLI for building, linting, exploring, and packing OKF bundles"
   homepage "https://github.com/openknoll/oknoll-python"
-  url "https://files.pythonhosted.org/packages/30/8f/648d2af68ede0071a4f6edb071596ca6df51a2c2ca22208defbc6d32f8cf/oknoll-0.3.3.tar.gz"
-  sha256 "12fa441fbf4cd1fe76075ce93edfab22c34159a47a8ef76f9ee408807e4feeb0"
+  url "https://files.pythonhosted.org/packages/ad/bf/a37097d179b28a3905e26e914c092373133e951dc7bcdb0e1450778a0785/oknoll-0.3.4.tar.gz"
+  sha256 "5e5adcc7c18f09eb406c12072ab5b1b451ebc804f0171f24f71b38bab720a846"
   license "Apache-2.0"
-
-  bottle do
-    root_url "https://github.com/openknoll/homebrew-tap/releases/download/oknoll-0.3.3"
-    sha256 cellar: :any, arm64_tahoe:  "7767946e70160d3c938e9fd80592d50d2dcda1f0b1f38579d6064768aee1df0d"
-    sha256 cellar: :any, x86_64_linux: "a94bc7c386662b94408deb2cb27ebffc028c311fd5cd6cd0a1437c084c4c5d2a"
-  end
 
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
@@ -153,23 +147,23 @@ class Oknoll < Formula
   end
 
   resource "okf-core" do
-    url "https://files.pythonhosted.org/packages/4c/04/15b66d2dc9bffd76a441f9951d48389c43a75baefc87af77cc3b4fd92bb1/okf_core-0.3.3.tar.gz"
-    sha256 "83ed4695918fc21f428c61bd686c644dce07fc7e60f517ed3bebaff4badf918f"
+    url "https://files.pythonhosted.org/packages/55/b9/7247077694deec48932bc07cc2f46264ddb350313d4d14b9e7f41cd24bc1/okf_core-0.3.4.tar.gz"
+    sha256 "9b136ab41d15f488a9d8ee016ff88d416eeb6c9d03027dfb1017a59c9c4d1b7c"
   end
 
   resource "oknoll-connectors" do
-    url "https://files.pythonhosted.org/packages/77/b9/cb67c8fc42b13dc50dc67ae4dd92f7bc05f768fa382b67493db606691bef/oknoll_connectors-0.3.3.tar.gz"
-    sha256 "79b8c588386a7561627d637ebf2217cf38055b5ccf82a1bf2abb5968e3b48f24"
+    url "https://files.pythonhosted.org/packages/d9/58/fff153afbb2ee9e6d5724c17fe6ff20b22010b74ca524bd855ba146edda8/oknoll_connectors-0.3.4.tar.gz"
+    sha256 "79857698503575913cd214a7298412f07814b50f67f1d784a8f75526b73ea05a"
   end
 
   resource "oknoll-eval" do
-    url "https://files.pythonhosted.org/packages/43/e7/f14e5540013f851e8ffc1db9db82f2949b8eecd0bbb5a92ff9f4e5b973cd/oknoll_eval-0.3.3.tar.gz"
-    sha256 "b90e5e0413983a25b941fddb38de953eeb60102c9ebc577aeda88bbe57587820"
+    url "https://files.pythonhosted.org/packages/48/97/aa398cf9b84660cfc532ab326d4ee6b40af956a8c1ad809c3b8f951029c0/oknoll_eval-0.3.4.tar.gz"
+    sha256 "d6b71659c74e56193f56b8eaff40dafeeeedacbc526356afb405d3ce741e301a"
   end
 
   resource "oknoll-providers" do
-    url "https://files.pythonhosted.org/packages/7a/c6/2fcc4148c0dff996364876a0e5ed370f0c50618bce7c1e59fee4d358a054/oknoll_providers-0.3.3.tar.gz"
-    sha256 "f9ddf6bc4cf417ce1ec36756bd05bb2d73e683dd90e9221ec0876d56e889c911"
+    url "https://files.pythonhosted.org/packages/67/b7/8d495718fd79c96d1351191330807d77aaf148f59314fc394b5493cd35e6/oknoll_providers-0.3.4.tar.gz"
+    sha256 "6f5ca55766aaf9b4e0412ca5895c26e075e1df2074fb9f86f4c78c1b21e20baf"
   end
 
   resource "opentelemetry-api" do
@@ -213,8 +207,8 @@ class Oknoll < Formula
   end
 
   resource "pypdf" do
-    url "https://files.pythonhosted.org/packages/1a/7f/5bc369dedae6750e23fc9ce82f6396258f92ed80ae0137732738a6d4ffce/pypdf-6.16.0.tar.gz"
-    sha256 "dfc5b0afeb5e02e9ee1dce71c09071f062d1a4030d2925f03a5daee0ee975ed8"
+    url "https://files.pythonhosted.org/packages/b6/5a/df92d1c1ef8806ca28f20f978ee059894868d93de797a7e2edebe7fe1a43/pypdf-6.16.1.tar.gz"
+    sha256 "c4d1b43ddae921387321cf63936cd16a7743b91d2da92f165c149a195c972ba9"
   end
 
   resource "pytest" do
